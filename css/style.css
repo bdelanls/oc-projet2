@@ -212,7 +212,7 @@ nav.navbar li a:hover{color: var(--blue);}
     width: 24px; height: 24px;
     border-radius: 11px;
     margin-right: 10px;
-
+    padding: 0 0 2px 1px;
 }
 
 
@@ -239,6 +239,11 @@ nav.navbar li a:hover{color: var(--blue);}
 .offers .title a:hover, .activity-main .title a:hover{
     color: var(--blue);
 }
+.offers-main a.bt{
+    font-size: 18px;
+    font-weight: 700;
+}
+.offers-main a.bt:hover{color: var(--blue);}
 
 @media (max-width: 1024px) {
     .offers section{width: 100%;}
@@ -246,7 +251,7 @@ nav.navbar li a:hover{color: var(--blue);}
     
 }
 @media (max-width: 768px) {
-    .offers{flex-direction: column-reverse;}
+    .offers{flex-direction: column-reverse; gap: 20px;}
     .offers section{padding: 20px; border-radius: 0;}
     section.offers-main{background-color: var(--white);}   
 }
@@ -260,7 +265,7 @@ nav.navbar li a:hover{color: var(--blue);}
 .card{
     display: flex;
     background-color: var(--white);
-    border: 5px solid var(--white);
+    padding: 5px;
     border-radius: 20px;
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
 }
@@ -279,9 +284,7 @@ nav.navbar li a:hover{color: var(--blue);}
 .card-rating{display: flex;}
 
 /* sponsored cards */
-
 .offers-sponsored .cards{flex-direction: column; gap: 30px;}
-
 .card-sponsored{height: 144px;}
 .card-sponsored a{display: flex;}
 .card-sponsored .card-content{
@@ -295,16 +298,13 @@ nav.navbar li a:hover{color: var(--blue);}
 }
 
 /* offers cards */
-
 .offers-main .cards{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    /*row-gap: 30px;*/
 }
 .card-offer{
-    /*flex-direction: column;*/
     width: 31%;
     margin-bottom: 30px;
     justify-content: space-between;
@@ -375,8 +375,6 @@ nav.navbar li a:hover{color: var(--blue);}
     height: 14%;
 }
 
-
-
 @media (min-width: 769px) and (max-width: 1024px) {
     .card-activity{height: 270px; width: 22.4%;} 
     .card-activity img{height: 74%};
@@ -384,6 +382,7 @@ nav.navbar li a:hover{color: var(--blue);}
 }
 
 @media (max-width: 768px) {
+    .activity-main{margin-top: 35px;}
     .activity-main .cards{flex-direction: column; gap: 15px;}
     .card-activity{width: 100%; height: 200px;}
     .card-activity a{width: 100%;}
@@ -391,24 +390,24 @@ nav.navbar li a:hover{color: var(--blue);}
     .card-activity .card-content{height: 30%;}
 }
 
+/***** Footer *****/
 
-
-
-
-
-
-
-
-
-
-
-
-
+footer{
+    background-color: var(--grey);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+footer h4{
+    font-weight: 700;
+    font-size: 18px;
+}
+footer li{margin-top: 12px;}
+footer li a{font-size: 16px;}
+footer li a:hover{text-decoration: underline;}
+footer .column{width: 30%;}
 
 @media (max-width: 768px) {
-
-}
-
-@media (min-width: 769px) and (max-width: 1024px) {
-    
+    footer{flex-direction: column; gap: 40px; padding: 30px;}
+    footer .column{width: 100%;}
 }
