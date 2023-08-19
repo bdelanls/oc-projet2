@@ -70,29 +70,30 @@ header{
 
 }
 .logo img{width: 61px;}
-nav.navbar ul{
+.navbar ul{
     display: flex;
     flex-direction: row;
     gap: 70px;
 }
-nav.navbar li a{
+.navbar li a{
     padding: 15px 0;
     display: block;
 }
-nav.navbar li{border-top: 2px solid var(--white);}
-nav.navbar li.active{
-    border-top: 2px solid var(--blue); 
-    color: var(--blue);
+.navbar li a:hover{color: var(--blue);}
+
+@media (min-width: 769px) {
+    .navbar li a{border-top: 2px solid var(--white);}
+    .navbar li a:hover{border-top: 2px solid var(--blue);}
 }
-nav.navbar li a:hover{color: var(--blue);}
 
 @media (max-width: 768px) {
     header{flex-direction: column;}
     .logo{align-items: end; height: 49px; margin-bottom: 14px;}
     .logo a{margin: 0 auto;}
-    nav.navbar ul{gap:0;}
-    nav.navbar li{width: 50%; text-align: center; border-top: none; border-bottom: 2px solid var(--grey);}
-    nav.navbar li.active{border-top: none; border-bottom: 2px solid var(--blue);}
+    .navbar ul{gap:0;}
+    .navbar li{width: 50%; text-align: center;}
+    .navbar li a{border-top: none; border-bottom: 2px solid var(--grey);}
+    .navbar li a:hover{border-top: none; border-bottom: 2px solid var(--blue);}
 }
 
 /***** Info *****/
