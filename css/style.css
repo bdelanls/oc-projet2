@@ -317,7 +317,8 @@ header{
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
-    .offers-sponsored .cards{flex-direction: row; gap: 20px;}
+    .offers-sponsored .cards{flex-direction: row; gap: 20px; justify-content: space-between;}
+    .offers-sponsored .card{width: 31%;}
 }
 
 @media (max-width: 768px) {
