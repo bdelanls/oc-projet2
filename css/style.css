@@ -212,6 +212,7 @@ header{
 
 
 /***** Offers *****/
+article.card a, article.card-activity a{width: 100%;}
 .offers{
     display: flex;
     justify-content: space-between;
